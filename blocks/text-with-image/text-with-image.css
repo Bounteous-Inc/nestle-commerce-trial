@@ -1,0 +1,153 @@
+/* Text with Image Block */
+.text-with-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.text-with-image-container {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 400px;
+  width: 100%;
+}
+
+/* Image Section */
+.text-with-image-image {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.text-with-image-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Text Section - Desktop (Overlay) */
+.text-with-image-text {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px #000;
+  max-width: 400px;
+  z-index: 2;
+}
+
+.text-with-image-content {
+  color: #333;
+}
+
+.text-with-image-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.text-with-image-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 24px;
+  color: #666;
+}
+
+.text-with-image-cta {
+  display: inline-block;
+  color: #666;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin: 0;
+}
+
+.text-with-image-cta:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Mobile Styles - Below 768px */
+@media (max-width: 767px) {
+  .text-with-image-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .text-with-image-image {
+    width: 100%;
+    height: 250px;
+    flex: none;
+  }
+  
+  .text-with-image-text {
+    position: static;
+    transform: none;
+    background: #fff;
+    backdrop-filter: none;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: none;
+    padding: 32px 20px;
+    margin: 0;
+  }
+  
+  .text-with-image-title {
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+  }
+  
+  .text-with-image-description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet Styles - 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-with-image-text {
+    right: 40px;
+    max-width: 350px;
+    padding: 32px;
+  }
+  
+  .text-with-image-title {
+    font-size: 1.75rem;
+  }
+  
+  .text-with-image-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .text-with-image-container {
+    min-height: 500px;
+  }
+  
+  .text-with-image-text {
+    right: 80px;
+    max-width: 450px;
+    padding: 48px;
+  }
+  
+  .text-with-image-title {
+    font-size: 2.25rem;
+    margin-bottom: 24px;
+  }
+  
+  .text-with-image-description {
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+  }
+}
