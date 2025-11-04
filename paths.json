@@ -1,12 +1,12 @@
 {
   "mappings": [
-    "/content/aem-commerce-xcom/:/",
-    "/content/aem-commerce-xcom/configuration:/.helix/config.json",
-    "/content/aem-commerce-xcom/headers:/.helix/headers.json",
-    "/content/aem-commerce-xcom/metadata:/metadata.json",
-    "/content/aem-commerce-xcom.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
+    "/content/nestle-commerce-trial/:/",
+    "/content/nestle-commerce-trial/configuration:/.helix/config.json",
+    "/content/nestle-commerce-trialm/headers:/.helix/headers.json",
+    "/content/nestle-commerce-trial/metadata:/metadata.json",
+    "/content/nestle-commerce-trial/enrichment/enrichment.json:/enrichment/enrichment.json"
   ],
   "includes": [
-    "/content/aem-commerce-xcom/"
+    "/content/nestle-commerce-trial/"
   ]
 }
